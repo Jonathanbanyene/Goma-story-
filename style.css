@@ -1,0 +1,211 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Poppins', sans-serif;
+     scroll-behavior: smooth;
+}
+
+p {
+     font-weight: 300;
+     color: black;
+}
+
+header {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     padding: 20px 10px;
+     z-index: 1000;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     transition: 0.5s;
+     background-image: url('personnes fuillant la guerre à goma.jpg');
+
+     
+}
+
+.logo {
+     color: chocolate;
+     font-weight: bold;
+     font-size: 2em;
+     text-decoration: none;
+}
+
+.logo span {
+     color: black;
+}
+
+.nave {
+     display: flex;
+     align-items: center;
+}
+
+.nave li {
+     list-style: none;
+     background-color: rgb(218, 99, 69);
+     padding: 10px;
+}
+
+.nave a {
+     color: chartreuse;
+     text-decoration: none;
+     font-weight: 700;
+     margin-left: 30px;
+}
+
+body {
+     margin: 0;
+     padding: 0;
+     background: #f1f1f1;
+     font-family: 'Montserrat', sans-serif;
+     margin-top: 150px;
+     background-size: cover;
+     background-position: center;
+     background-attachment: fixed;
+}
+
+body::before {
+     content: "";
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-size: cover;
+     background-position: center;
+     filter: brightness(50%);
+     z-index: -1;
+}
+
+.header-logo {
+     display: inline-block;
+     width: 90%;
+     padding: 10px 30px;
+}
+
+.header-logo a {
+     text-decoration: none;
+     color: rgb(8, 243, 35);
+     font-size: 1.5rem;
+     font-weight: bold;
+}
+
+.nave-input {
+     background: #90e5e1;
+     border: none;
+     flex-basis: 60%;
+     outline: none;
+}
+
+img {
+     width: 20%;
+     height: auto;
+     display: block;
+     margin: auto;
+}
+
+.centered {
+     text-align: center;
+}
+
+header{
+     color: green;
+     transition: color 0.3s;
+}
+header:hover{
+             color: orange;
+}
+
+accueil {
+     background-image: url('ENTRER SERENA.jpg');
+     }
+     .vertical {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 10px;
+
+     }
+     @keyframes scroll {
+          0% {transform: translateX(0);}/*Début*/
+          12.5% {transform: translateX(-100%);}/*passé à l'image 2*/
+          25% {transform: translateX(-200%);}/*passé à l'image 3*/
+          37.5% {transform: translateX(-300%);}/*passé à l'image 4*/
+          50% {transform: translateX(-400%);}/*passé à l'image 5*/
+          62.5% {transform: translateX(-500%);}/*passé à l'image 6*/
+          75.5% {transform: translateX(-600%);}/*passé à l'image 7*/
+          87.5% {transform: translateX(-700%);}/*passé à l'image 8*/
+          100% {transform: translateX(0);}/*Retour au début*/
+     }
+
+
+ /*style du menu*/
+ nav{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 15px;
+     background: #333;
+ }
+
+ .nav-list {
+     list-style: none;
+     display: flex;
+ }
+
+ .nav-list li{
+     margin: 0 10px;
+ }
+
+ .nav-list{
+     text-decoration: none;
+     color: white;
+ }
+ /*Menu burger caché par défaut*/
+ .menu-toggle{
+     font-size: 30px;
+     cursor: pointer;
+     color: white;
+     display: none; /*Caché sur PC*/
+ }
+
+  /*Mobule : afficher le menu burger et cacher la liste*/
+
+@media screen and (max-width: 768px){
+     .menu-toggle{
+          display: block;
+
+     }
+     .nav-list{
+          display:  none;/*Cacher par c*/
+          width: 1O;
+          position: absolute;
+          top: 60px;
+          left: 0;
+          background: #333;
+     }
+     .nav-list.acti{
+          display: flex;/*Affiché  lorque activ
+          */
+     }
+     body {
+          font-size: 14px;
+          margin: 10px;
+          }
+          header img {
+               width: 100%;
+               height: auto;
+                  }
+                  p{
+                    text-align: justify;
+                    margin: 10px;
+                    }
+                    img {
+                         width: 100%;
+                         height: auto;
+                         }
+               }
+
