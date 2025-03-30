@@ -209,19 +209,3 @@ accueil {
                          }
                }
 
-h1{
-     margin-bottom: 0;
-     padding: 0;
-}
-nav{
-     margin-top: 0;
-     padding-top: 0;
-}
-ul{
-     padding: 0;
-     margin: 0;
-}
-li{
-     display: inline-block;
-     margin: 0 5px;
-}
